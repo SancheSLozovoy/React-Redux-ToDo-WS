@@ -46,14 +46,14 @@ export class TaskService{
         return response.json(); 
     };
 
-    static updateTask = async(id:number, title: string, completed: boolean, userId:number) =>{
+    static updateTask = async(id:number, title: string, completed: boolean, userId: number) =>{
         const response = await fetch(`${BASE_URL}/${id}`, {
             method: "PUT",
             body: JSON.stringify({
                 id,
                 title,
                 completed,
-                userId,
+                userId
             }),
             headers: {
                 'Content-type': 'application/json; charset=UTF-8',
