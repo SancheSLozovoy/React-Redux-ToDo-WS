@@ -7,7 +7,6 @@ const UserSelect: React.FC<UserSelectProps> = ({ userIds, onUserChange }) => {
             const value = e.target.value ? +e.target.value : null;
             onUserChange(value);
         }}>
-            <option>All users</option>
             {userIds.map(id => (
                 <option key={id} value={id}>
                     User id: {id}

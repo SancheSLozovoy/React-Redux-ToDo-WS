@@ -50,7 +50,7 @@ export const Button = styled.button`
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
+    
     &:hover {
         background-color: #ff4c4c;
     }
